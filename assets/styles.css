@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+    --color-font:#5A5A5A;
+    --primary:#DED2BF;
+    --secondary: #BF995C;
+    --tertiary:#8B6932;
+    --withe:#FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat';
+    height: 1043px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 91vw;
+    max-width: 457px;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fl{
+    display: none;
+}
+.sl{
+    width: 89px;
+    height: 89px;
+}
+
+header > h1{
+    margin-top: 28px;
+    width: auto;
+    height: 27px;
+    font: normal normal 600 22px/27px Montserrat;
+    color: var(--color-font);
+}
+header > h2{
+    margin-top: 16px;
+    width: 344px;
+    height: 47px;
+    text-align: center;
+    font: normal normal 600 18px/22px Montserrat;
+    color: var(--color-font);
+}
+header > section{
+    margin-top: 16px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section > article{
+    display: flex;
+    flex-direction: row;
+}
+section > article > p{
+    width: auto;
+    font: normal normal normal 16px/19px Montserrat;
+    color: var(--color-font);
+}
+section > article > p > span{
+    font-weight: 600;
+}
+section > article > img:not(.iheart){
+    margin-top: 3.5px;
+    max-width: 16px;
+    max-height: 14px;
+    margin-right: 12.27px;
+}
+.iheart{
+    width: auto;
+    height: 20px;
+    margin-right: 8px;
+}
+main{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.card_container{
+    width: 90vw;
+    max-width: 457px;
+    height: 630px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card_container h3{
+    font: normal normal 600 16px/22px Montserrat;
+    color: var(--color-font);
+}
+.card_email{
+    width: 320px;
+    height: 79px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font: normal normal 600 16px/22px Montserrat;
+}
+.card_email > input{
+    height: 48px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 12px;
+    font: normal normal normal 16px/22px Montserrat;
+    background-color: var(--withe);
+}
+.card_gender{
+    width: 320px;
+    height: 79px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.gender{
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.radio_input{
+    display: none;
+}
+.radio_label{
+    height: 52px;
+    width: 104px;
+    border-radius: 8px;
+    border: 0px;
+    font: normal normal 600 16px/19px Montserrat;
+    background-color: var(--withe);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-font);
+}
+
+.radio_input:checked + .radio_label{
+    background-color: var(--secondary);
+    color: var(--withe);
+}
+.card_date{
+    width: 320px;
+    height: 79px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+}
+.date{
+    width: 212px;
+    height: 35px;
+    border-radius: 8px;
+    border: 0;
+    padding-left: 12px;
+    font: normal normal normal 16px/22px Montserrat;
+    background-color: var(--withe);
+    color: var(--color-font);
+}
+.card_sentimental_situation{
+    width: 320px;
+    height: 79px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+}
+.sentimental_situation{
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.card_trm{
+    width: 320px;
+    height: auto;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+.card_trm > p{
+    font: normal normal 600 12px/22px Montserrat;
+    color: var(--color-font);
+}
+.card_trm_inputs{
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+.card_button{
+    width: 320px;
+    height: 38px;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.my_checkbox{
+    display: none;
+}
+.my_lcheckbox{
+    font: normal normal normal 12px/22px Montserrat;
+    color: var(--color-font);
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    width: max-content;
+}
+a{
+    font: normal normal 600 12px/22px Montserrat;
+    color: var(--color-font);
+    cursor: pointer;
+    width: max-content;
+}
+.my_lcheckbox::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: solid 3px var(--tertiary);
+    background-color: var(--secondary);
+    transition: .2s ease;
+    transform: scale(0);
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked + .my_lcheckbox::before{
+    transform: scale(1);
+}
+.my_lcheckbox::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--withe);
+}
+
+.button{
+    height: 100%;
+    width: 100%;
+    background-color: #BF995C;
+    border-radius: 8px;
+    border: 0;
+    font: normal normal 600 16px/19px Montserrat;
+    color: var(--withe);
+}
+.button:active{
+    color: var(--color-font);
+}
+@media (min-width: 768px){
+    .fl{
+        display: flex;
+        width: 360px;
+    }
+    .sl{
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+    header{
+        width: 90vw;
+        max-width: 961px;
+    }
+    header > div{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        position: relative;
+        left: -3%;
+    }
+    header > h2{
+        width: auto;
+    }
+    header > section{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    section > article > p{
+        width: auto;
+        max-width: 314px;
+    }
+    .c{
+        max-width: 240px;
+    }
+    .card_container{
+        width: 90vw;
+        max-width: 1029px;
+        height: 329px;
+        align-items: center;
+        flex-direction: row;
+        gap: 60.5px;
+        padding: 28px 38px;
+    }
+    .first_section{
+        height: 100%;
+        width: 100%;
+    }
+    .second_section{
+        height: 100%;
+        width: 100%;
+    }
+    .card_email{
+        width: 100%;
+        margin-top: 0;
+    }
+    .card_gender{
+        width: 100%;
+        margin-top: 16px;
+    }
+    
+    .gender{
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .radio_label{
+        width: 32%;
+    }
+    .card_sentimental_situation{
+        width: 100%;
+        margin-top: 0;
+    }
+    .card_date{
+        width: 100%
+    }
+    .date{
+        width: 66%;
+        height: 48px;
+    }
+    .card_trm{
+        width: 100%;
+        margin-top: 16px;
+        gap: 14px;
+        font-size: 12px;
+    }
+    .card_trm_inputs{
+        height: 52px;
+        gap: 5px;
+    }
+    .my_lcheckbox::before{
+        top: 2px;
+    }
+    .my_lcheckbox::after{
+        top: 1px;
+    }
+    .card_button{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        width: 85%;
+    }
+}
